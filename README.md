@@ -4,11 +4,9 @@
 
 ## 1. Browser
 
+### [브라우저 필수앱 정리](https://github.com/seong-jin/Web-Dev-Setting/blob/master/browser/browser.md)
 
-
-### 브라우저 필수앱 정리
-
-* 내용 추가중
+* 업데이트 중 
 * Chrome / Firefox
 
 
@@ -19,18 +17,18 @@
 
 
 
-### Atom
+### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_Atom.md)
 
-* 내용 추가중
+* 업데이트 중
 * 스니펫 추가 예정 - HTML, SassDoc
 
 -
 
 
 
-### Visual Studio Code
+### [Visual Studio Code](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_VSCode.md)
 
-* 내용 추가중
+* 업데이트 중
 * 스니펫 추가 예정 - SassDoc
 
 
@@ -54,7 +52,15 @@
 ### Node.js
 
 * 준비중
-
 * Node Sass 사용을 위한 설치 과정
 
-  ​
+
+
+
+
+---
+
+
+
+
+
