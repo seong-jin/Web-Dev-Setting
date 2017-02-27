@@ -93,8 +93,13 @@
 ### 5-4. PlatformIO IDE Terminal
 
 ```
-ctrl + `
+터미널 패키지
 ```
+
+* 터미널 toggle 단축키 : ctrl + `
+
+
+* 상세설명 : https://atom.io/packages/platformio-ide-terminal
 
 
 
