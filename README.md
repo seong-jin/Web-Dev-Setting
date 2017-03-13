@@ -20,7 +20,7 @@
 ### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_Atom.md)
 
 * 업데이트 중
-* 스니펫 추가 예정 - HTML, SassDoc
+* ​
 
 -
 
@@ -29,19 +29,17 @@
 ### [Visual Studio Code](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_VSCode.md)
 
 * 업데이트 중
-* 스니펫 추가 예정 - SassDoc
 
-
+  ​
 
 
 
 ## 3. IDE
 
-
-
 ### WebStorm
 
 * 준비중
+
 
 
 
@@ -57,10 +55,7 @@
 
 
 
-
 ---
-
-
 
 
 

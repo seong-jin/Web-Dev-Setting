@@ -92,8 +92,6 @@ Supports JSDoc and Closure Compiler tags :
 ##### Document Everything Visible
 `Ctrl` + `Alt` + `D` and after `Ctrl` + `Alt` + `V`
 
-
-
 	Generates documentation for exported, public and protected symbols in the document.
 
 
@@ -152,7 +150,51 @@ Supports text alignment and multi-cursor alignment.
 
 
 
+
 -
+
+
+
+### 1-11. Insert Date String
+
+https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring
+
+현재 날짜(및 시간)를 자동으로 표시해 주는 플러그인
+
+현재 날짜 입력 : ```Ctrl``` + ```Shift``` + ```I```
+
+날짜 형식 수정 : ```Ctrl``` + ```Shift``` + ```Alt``` + ```I```
+
+
+
+-
+
+### 1-12. vscode-icons
+
+VS Code Icons theme
+
+
+
+-
+
+
+
+### 1-12. Autoprefixer 
+
+https://github.com/postcss/autoprefixer 
+
+https://twitter.com/autoprefixer
+
+```
+PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use(http://caniuse.com/).
+CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
+```
+
+
+
+-
+
+
 
 ## 2. 기본설정 수정
 	파일 > 기본 설정 > 설정
@@ -163,23 +205,30 @@ Supports text alignment and multi-cursor alignment.
 
 ```json
 {
+	// 언어 식별자 집합에 대해 재정의할 설정을 구성합니다.
+	"[]": {},
+
 	"editor.tabSize": 2,
 	"editor.lineHeight": 20,
 	"window.zoomLevel": 1,
 	"files.trimTrailingWhitespace": true,
-	"editor.wordWrap": false,
-	"editor.renderWhitespace": "none",
+	"editor.wordWrap": "on",
+	"editor.renderWhitespace": "all",
 	"editor.renderControlCharacters": true,
 	"editor.insertSpaces": false,
-	"editor.wrappingColumn": 0,
 	"editor.renderIndentGuides": false,
-	"editor.cursorStyle": "underline",
+	"editor.cursorStyle": "line",
 	"view-in-browser.customBrowser": "chrome",
 	"emmet.triggerExpansionOnTab": false,
 	"emmet.syntaxProfiles": {},
 	"insertdatestring.format": "YYYY-MM-DD",
-
-	"[]": {}
+	"workbench.activityBar.visible": true,
+	"editor.minimap.enabled": true,
+	"editor.minimap.renderCharacters": true,
+	"editor.minimap.maxColumn": 40,
+	"workbench.iconTheme": "vscode-icons",
+	"editor.fontFamily": "Consolas, 'Courier New', monospace",
+	"vsicons.projectDetection.autoReload": true
 }
 ```
 
@@ -306,11 +355,11 @@ Supports text alignment and multi-cursor alignment.
 		"prefix": "html!",
 		"body": [
 			"<!DOCTYPE html>",
-			"<html lang='ko'>",
+			"<html lang=\"ko\">",
 			"<head>",
-			"<meta charset='UTF-8'>",
-			"<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
-			"<meta http-equiv='X-UA-Compatible' content='ie=edge'>",
+			"<meta charset=\"UTF-8\">",
+			"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
 			"<title>$1</title>",
 			"</head>",
 			"<body>",
@@ -321,6 +370,22 @@ Supports text alignment and multi-cursor alignment.
 		"description": "html5 doctype"
 	}
 }
+```
+
+* JavaScript 에서 ```log```  을 ```console.log();``` 스니펫으로 설정한 코드
+
+```json
+{
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+}
+
 ```
 
 

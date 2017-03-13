@@ -73,7 +73,13 @@ Temporary Items
 sftp-config.json
 
 
-# Webstorm & VS Code Editor 
+# Webstorm & VS Code Editor
 .idea
 .vscode
 
+#node-sass
+package.json
+
+# Yarn
+npm-debug.log
+yarn-error.log
