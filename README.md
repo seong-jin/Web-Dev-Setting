@@ -19,8 +19,7 @@
 
 ### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_Atom.md)
 
-* 업데이트 중
-* ​
+* 업데이트 중​
 
 -
 
@@ -43,9 +42,11 @@
 
 
 
+-
+
+
+
 ## 4. Platform
-
-
 
 ### Node.js
 
