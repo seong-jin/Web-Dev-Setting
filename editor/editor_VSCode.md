@@ -349,6 +349,10 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 
 * html 파일에서 `html!` 를 `HTML5 기본 템플릿` `스니펫`으로 설정한 코드
 
+<details>
+
+<summary>자세히 보기</summary>
+
 ```json
 {
 	"html5 doctype": {
@@ -372,7 +376,59 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 }
 ```
 
+</details>
+
+* html 파일에서 ```vue!```를 ```Vue 기본 템플릿``` ```스니펫```으로 설정한 코드
+
+<details>
+
+<summary>자세히 보기</summary>
+
+```json
+{
+	"html5 vue template": {
+		"prefix": "vue!",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"ko\">",
+			"<head>",
+			"<meta charset=\"UTF-8\">",
+			"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+			"<title>$1</title>",
+			"<style>",
+			"	[v-cloak] {display:none;}",
+			"</style>",
+			"<!-- Vue JS 로드 -->",
+			"<script src=\"https://unpkg.com/vue\"></script>",
+			"</head>",
+			"<body>",
+			"",
+			"<!-- root vue instance → mounted elementNode -->",
+			"",
+			"<script>",
+			"var vm = new Vue({",
+			"	el: '#app',",
+			"	data: {",
+			"		",
+			"	}",
+			"});",
+			"</script>",
+			"</body>",
+			"</html>"
+		],
+		"description": "html5 vue template"
+	}
+}
+```
+
+</details>
+
 * JavaScript 에서 ```log```  을 ```console.log();``` 스니펫으로 설정한 코드
+
+<details>
+
+<summary>자세히 보기</summary>
 
 ```json
 {
@@ -385,10 +441,9 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 		"description": "Log output to console"
 	}
 }
-
 ```
 
-
+</details>
 
 
 
