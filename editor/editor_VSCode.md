@@ -349,10 +349,6 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 
 * html 파일에서 `html!` 를 `HTML5 기본 템플릿` `스니펫`으로 설정한 코드
 
-<details>
-
-<summary>자세히 보기</summary>
-
 ```json
 {
 	"html5 doctype": {
@@ -376,13 +372,7 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 }
 ```
 
-</details>
-
 * html 파일에서 ```vue!```를 ```Vue 기본 템플릿``` ```스니펫```으로 설정한 코드
-
-<details>
-
-<summary>자세히 보기</summary>
 
 ```json
 {
@@ -422,13 +412,9 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 }
 ```
 
-</details>
+
 
 * JavaScript 에서 ```log```  을 ```console.log();``` 스니펫으로 설정한 코드
-
-<details>
-
-<summary>자세히 보기</summary>
 
 ```json
 {
@@ -443,7 +429,7 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 }
 ```
 
-</details>
+
 
 
 
