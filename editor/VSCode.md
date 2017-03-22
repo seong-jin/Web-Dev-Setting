@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-
+<br>
 
 ## 0. 참고링크
 * 다운로드 : https://code.visualstudio.com/
@@ -8,11 +8,17 @@
 * 각종 확장 검색 : https://marketplace.visualstudio.com/VSCode
 
 
-
+<br>
 
 
 
 ## 1. 주요 확장 모음
+
+
+
+<details>
+
+<summary>주요 확장 자세히 보기</summary>
 
 
 
@@ -21,7 +27,7 @@
 * 브라우저 셋팅 : 파일 > 기본 설정 > 설정
   ```json
   {
-  	"view-in-browser.customBrowser": "firefox"
+    "view-in-browser.customBrowser": "firefox"
   }
 
   // 브라우저 : firefox, chrome, iexplore, Safari
@@ -30,76 +36,143 @@
   cf) Firefox 로 파일을 열 때는 `mozilla` 또는 `firefox`로 값을 넣어줄 것
 
 
--
+<br>
+
+
 
 ### 1-2. ESLint
-	문법 오류 감지
--
+
+* 문법 오류 감지
+
+<br>
+
+
 
 
 ### 1-3. Guides
-	Tab 세로 가이드 라인
--
+* Tab 세로 가이드 라인
+
+<br>
+
+
 
 
 ### 1-4. Sass
-```
-Indented Sass syntax highlighting, autocomplete & snippets for VSCode
-```
+* Sass 구문강조, 자동완성 및 기본 스니펫 제공
+
 
 * Snippets
-  ```
-  Snippets have been reduced to a few time savers.
-
-  var - declare a new variable
-  mixin - declare a new mixin
-  if - base for an @if statement
-  for - base for a @for loop
-  each - base for a @each loop
-  while - base for a @while loop
-  ```
+  * `var` : declare a new variable
+  * `mixin` : declare a new mixin
+  * `if` : base for an @if statement
+  * `for` : base for a @for loop
+  * `each` : base for a @each loop
+  * `while` : base for a @while loop
 
 
--
-
-### 1-5. Color Picker
-
-* 단축키 : Alt + C  P →  `Alt` + `C`  and after,  `Alt` + `P` 로 변경
 
 
--
+<br>
 
-### 1-6. Document This
+### 1-5. vetur
 
-* "Document This" is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files.
+* Vue.js  구문 강조
+* `.vue` 파일이 아닐 경우, 기본적으로 구문 강조가 적용 안됨.
+* 구문 강조 설정 방법
+  1. 우측 하단의 `언어모드 선택` 클릭 
+  2. 명령창에 `vue` 입력
+  3. `HTML` 파일일 경우 `Vue-html` 선택
+     * 언어모드가 `HTML` 에서 `Vue-html` 로 변경된다.
+  4. 그 외의 파일에서 구문 강조를 확인 하려면 언어 모드를  `Vue` 를 선택한다.
+
+
+
+<br>
+
+### 1-6. Path Intellisense
+
+- 파일 경로 및 파일명 자동완성 기능
+
+
+
+<br>
+
+### 1-7. Align
+
+- 텍스트 정렬 및 다중 커서 정렬
+
+
+- `ctrl` + `alt` + `a`
+
+
+
+<br>
+
+
+
+### 1-8. Document This
+
+* JSDoc 을 위한 주석문 생성
+* _"Document This"_ is a Visual Studio Code extension that automatically generates detailed _**JSDoc comments**_ for both TypeScript and JavaScript files.
 * 설명 : https://marketplace.visualstudio.com/items?itemName=joelday.docthis
 
 
+<br>
 
-##### Functionality
+#### 1-8-1. Tags
+
 Supports JSDoc and Closure Compiler tags :
-	@class, @description, @enum, @export, @function, @implements, @interface, @param, @private, @returns, @static, @template, @type and @memberOf.
 
-
-##### Document This
-`Ctrl` + `Alt` + `D` and again `Ctrl` + `Alt` + `D`
-	Generates documentation for whatever the caret is on or inside of.
-
-##### Document Everything
-`Ctrl` + `Alt` + `D` and after, `Ctrl` + `Alt` + `E`
-	Generates documentation for all symbols that are supported by the extension.
-
-##### Document Everything Visible
-`Ctrl` + `Alt` + `D` and after `Ctrl` + `Alt` + `V`
-
-	Generates documentation for exported, public and protected symbols in the document.
-
-
--
+> @class, @description, @enum, @export, @function, @implements, @interface, @param, @private, @returns, @static, @template, @type and @memberOf.
 
 
 
-### 1-7. TabSpacer
+<br>
+
+#### 1-8-2. Document This
+
+`Ctrl` + `Alt` + `D` + `D`
+
+> Generates documentation for whatever the caret is on or inside of.
+
+
+
+<br>
+
+
+#### 1-8-3. Document Everything
+`Ctrl` + `Alt` + `D` + `E`
+> Generates documentation for all symbols that are supported by the extension.
+
+
+
+<br>
+
+#### <s>1-8-4. Document Everything Visible</s>
+
+`Ctrl` + `Alt` + `D` + `V`
+
+> Generates documentation for exported, public and protected symbols in the document.
+
+
+
+<br>
+
+
+
+### 1-9. Color Picker
+
+- [3. 단축키 설정 수정](#3-단축키 설정 수정) 에서 단축키 변경
+  - 변경 전 : Alt + C  P
+  - 변경 후 :  `Alt` + `C` + `P`
+
+<br>
+
+
+
+
+
+### 1-10. TabSpacer
 
 | 단축키                    | 기능 설명             |
 | ---------------------- | ----------------- |
@@ -109,90 +182,47 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
--
+<br>
 
-### 1-8. Insert Date String
+### 1-11. Insert Date String
 
-```
-Insert the current date and time according to configured format.
-```
-
-* 기본 날짜형식 : YYYY-MM-DD hh:mm:ss  →  `YYYY-MM-DD` 로 변경
+* 현재 날짜(및 시간)를 자동으로 표시
 * 기본 단축키 : `ctrl` + `shift` + `i` 
+
+
+* [2. 기본설정 수정](#2-기본설정 수정) 에서 기본 날짜형식 변경
+  * 변경 전 : `YYYY-MM-DD hh:mm:ss`
+  * 변경 후 : `YYYY-MM-DD` 
 * 날짜 형식변경 및 날짜입력 : `ctrl` + `shift` + `alt` + `i`  입력 후, 명령창에서 형식 변경
 
 
 
 
--
-
-### 1-9. Path Intellisense 
-
-```
-Visual Studio Code plugin that autocompletes filenames.
-
-파일 경로 및 파일명 자동완성 기능
-```
+<br>
 
 
-
--
-
-
-
-### 1-10. Align
-
-```
-Supports text alignment and multi-cursor alignment.
-```
-
-* `ctrl` + `alt` + `a`
-
-
-
-
--
-
-
-
-### 1-11. Insert Date String
-
-https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring
-
-현재 날짜(및 시간)를 자동으로 표시해 주는 플러그인
-
-현재 날짜 입력 : ```Ctrl``` + ```Shift``` + ```I```
-
-날짜 형식 수정 : ```Ctrl``` + ```Shift``` + ```Alt``` + ```I```
-
-
-
--
 
 ### 1-12. vscode-icons
 
-VS Code Icons theme
+* VS Code Icons theme
+* 탐색기 및 탭의 아이콘 변경
 
 
 
--
+<br>
+
+### 1-13. Autoprefixer 
+
+* CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
+* 참고 URL
+  * https://github.com/postcss/autoprefixer 
+  * https://twitter.com/autoprefixer
 
 
 
-### 1-12. Autoprefixer 
+</details>
 
-https://github.com/postcss/autoprefixer 
-
-https://twitter.com/autoprefixer
-
-```
-PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use(http://caniuse.com/).
-CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
-```
-
-
-
--
+<br>
 
 
 
