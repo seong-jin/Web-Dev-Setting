@@ -18,7 +18,7 @@
 
 <details>
 
-<summary>주요 확장 자세히 보기</summary>
+<summary>주요 확장 세부 정보</summary>
 
 
 
@@ -78,12 +78,16 @@
 
 * Vue.js  구문 강조
 * `.vue` 파일이 아닐 경우, 기본적으로 구문 강조가 적용 안됨.
-* 구문 강조 설정 방법
-  1. 우측 하단의 `언어모드 선택` 클릭 
-  2. 명령창에 `vue` 입력
-  3. `HTML` 파일일 경우 `Vue-html` 선택
-     * 언어모드가 `HTML` 에서 `Vue-html` 로 변경된다.
-  4. 그 외의 파일에서 구문 강조를 확인 하려면 언어 모드를  `Vue` 를 선택한다.
+
+
+
+**◎ 구문 강조 설정 방법**
+
+1. 우측 하단의 `언어모드 선택` 클릭 
+2. 명령창에 `vue` 입력
+3. `HTML` 파일일 경우 `Vue-html` 선택
+   * 언어모드가 `HTML` 에서 `Vue-html` 로 변경된다.
+4. 그 외의 파일에서 구문 강조를 확인 하려면 언어 모드를  `Vue` 를 선택한다.
 
 
 
@@ -156,7 +160,7 @@ Supports JSDoc and Closure Compiler tags :
 
 ### 1-9. Color Picker
 
-- [3. 단축키 설정 수정](#3-단축키-설정-수정) 에서 단축키 변경
+- [3. 단축키 설정](#3-단축키-설정) 에서 단축키 변경
   - 변경 전 : Alt + C  P
   - 변경 후 :  `Alt` + `C` + `P`
 
@@ -221,48 +225,70 @@ Supports JSDoc and Closure Compiler tags :
 
 
 ## 2. 기본 설정 수정
-	파일 > 기본 설정 > 설정
-	setting.json 의 사용자 설정 수정
-	각자 스타일로 셋팅
+
+<details>
+
+<summary>기본 설정 수정 세부 정보</summary>
 
 
+
+### 2-1. 기본 설정 확인 
+
+1. 파일 > 기본 설정 > 설정
+2. `setting.json` 
+   * 좌측 : 기본 설정 (변경 안됨)
+   * 우측
+     *  `사용자 설정` : 언어 식별자 집합에 대해 재정의할 설정을 구성합니다.
+     * `작업 영역 설정` : 설정을 이 파일에 넣어서 기본 설정과 사용자 설정을 덮어씁니다.
+3. 각자 스타일로 셋팅
+   * `기본 설정`에서 설정값 가져오기
+     * ​원하는 설정에 마우스 오버시 보이는 `연필 아이콘` :pencil2:  클릭
+     * 변경하고 싶은 설정값 클릭
+     * 우측의 사용자 설정에 자동으로 수정된 설정값이 추가된다.
+   * `사용자 설정` 에 직접 입력
+
+<br>
+
+
+
+### 2-2. 사용자 설정에 추가한 코드
 
 ```json
 {
-	// 언어 식별자 집합에 대해 재정의할 설정을 구성합니다.
-	"[]": {},
+  "[]": {},
 
-	"editor.tabSize": 2,
-	"editor.lineHeight": 20,
-	"window.zoomLevel": 1,
-	"files.trimTrailingWhitespace": true,
-	"editor.wordWrap": "on",
-	"editor.renderWhitespace": "all",
-	"editor.renderControlCharacters": true,
-	"editor.insertSpaces": false,
-	"editor.renderIndentGuides": false,
-	"editor.cursorStyle": "line",
-	"view-in-browser.customBrowser": "chrome",
-	"emmet.triggerExpansionOnTab": false,
-	"emmet.syntaxProfiles": {},
-	"insertdatestring.format": "YYYY-MM-DD",
-	"workbench.activityBar.visible": true,
-	"editor.minimap.enabled": true,
-	"editor.minimap.renderCharacters": true,
-	"editor.minimap.maxColumn": 40,
-	"workbench.iconTheme": "vscode-icons",
-	"editor.fontFamily": "Consolas, 'Courier New', monospace",
-	"vsicons.projectDetection.autoReload": true
+  "editor.tabSize": 2,
+  "editor.lineHeight": 20,
+  "window.zoomLevel": 1,
+  "files.trimTrailingWhitespace": true,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.insertSpaces": false,
+  "editor.renderIndentGuides": false,
+  "view-in-browser.customBrowser": "chrome",
+  "emmet.triggerExpansionOnTab": false,
+  "emmet.syntaxProfiles": {},
+  "insertdatestring.format": "YYYY-MM-DD",
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": true,
+  "editor.minimap.maxColumn": 40,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "vsicons.projectDetection.autoReload": true
 }
 ```
 
 
 
-**※ Programming Language 별 셋팅 방법** 
+<br>
 
-* 참고자료 : [Language specific editor settings](https://code.visualstudio.com/docs/customization/userandworkspace#_language-specific-editor-settings)
+### 2-3. Programming Language 별 셋팅 방법
 
-- ex) tabSize를 기본 2로 하고 javascript 에서는 4로 하고 싶을 때
+**◎ 참고자료** : [Language specific editor settings](https://code.visualstudio.com/docs/customization/userandworkspace#_language-specific-editor-settings)
+
+ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶을 때
 
 ```json
 {
@@ -276,64 +302,73 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
+</details>
+
+<br>
 
 
 
+## 3. 단축키 설정
 
----
+<details>
 
-
-
-
-
+<summary>단축키 설정 수정 세부 정보</summary>
 
 
 
-## 3. 단축키 설정 수정
-	파일 > 기본 설정 > 바로가기키
-	keybindings.json 수정
-	각자 스타일로 셋팅
+### 3-1. 단축키 설정 확인
 
-* 참고 자료 :  [VS Code 기본 단축키 일람 PDF 문서](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+1. 파일 > 기본 설정 > 바로 가기 키
+2. `keybindings.json` 
+   - 좌측 : `기본 키 바인딩` (변경 안됨)
+   - 우측 : `keybindings.json`
+3. 각자 스타일로 셋팅
 
+**◎ 참고자료** :  [VS Code 기본 단축키 일람 PDF 문서](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+
+
+### 3-2. keybindings.json 에 추가한 코드 
 
 
 ```
 // 키 바인딩을 이 파일에 넣어서 기본값을 덮어씁니다.
 [
-	// emmet 실행
-	{ "key": "ctrl+e",
-		"command": "editor.emmet.action.expandAbbreviation",
-		"when": "editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadonly && !editorTabMovesFocus" },
-	// 계산
-	{ "key": "ctrl+shift+y",
-		"command": "editor.emmet.action.evaluateMath",
-		"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },
-	// 요소 감싸기
-	{ "key": "ctrl+w",
-		"command": "editor.emmet.action.wrapWithAbbreviation",
-		"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },
+  // emmet 실행
+  { "key": "ctrl+e",
+    "command": "editor.emmet.action.expandAbbreviation",
+	"when": "editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadonly && !editorTabMovesFocus" },
+  // 계산
+  { "key": "ctrl+shift+y",
+	"command": "editor.emmet.action.evaluateMath",
+	"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },
+  // 요소 감싸기
+  { "key": "ctrl+w",
+	"command": "editor.emmet.action.wrapWithAbbreviation",
+	"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },
 
-	// 블럭지정 또는 포커스된 문자 - 소문자로
-	{ "key": "ctrl+l ctrl+l",
-		"command": "editor.action.transformToLowercase",
-		"when": "editorTextFocus" },
-	// 블럭지정 또는 포커스된 문자 - 대문자로
-	{ "key": "ctrl+l ctrl+k",
-		"command": "editor.action.transformToUppercase",
-		"when": "editorTextFocus" },
+  // 블럭지정 또는 포커스된 문자 - 소문자로
+  { "key": "ctrl+l ctrl+l",
+	"command": "editor.action.transformToLowercase",
+	"when": "editorTextFocus" },
+  // 블럭지정 또는 포커스된 문자 - 대문자로
+  { "key": "ctrl+l ctrl+k",
+	"command": "editor.action.transformToUppercase",
+	"when": "editorTextFocus" },
 
-	// 컬러 피커 사용
-	{ "key": "alt+c alt+p",
-		"command": "extension.colorHelper.pick",
-		"when": "editorTextFocus" }
+  // 컬러 피커 사용
+  { "key": "alt+c alt+p",
+	"command": "extension.colorHelper.pick",
+	"when": "editorTextFocus" }
 
 ]
 ```
 
 
 
----
+</details>
+
+<br>
 
 
 
@@ -341,13 +376,16 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
-* 파일 > 기본 설정 > 사용자 코드 조각
+### 4-1. Snippet 설정
 
 
 
-1.  명령어 창 열어 snippet 검색 :  `ctrl` + `shift` + `p`  snippet
-2.  사용자 코드 조각 열기 - Preferences Snippets 선택
-3.  html / javascript 등 언어 선택
+
+1.  명령어 창 열기
+    * 파일 > 기본 설정 > 사용자 코드 조각 
+    * `ctrl` + `shift` + `p`  snippet
+2.  `snippet` 검색 → `Preferences Snippets` 선택
+3.  코드 조각의 언어 선택 : `html` ,  `javascript` 등 입력할 언어 선택
 4.  해당 json 파일이 열리면 아래와 같은 형식으로 내용 수정
 
 
@@ -371,83 +409,106 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
-#### 1. HTML Snippet
+<br>
 
- ◎ HTML5 기본 템플릿 : `!html`
+### 4-2. HTML Snippet
+
+<details>
+
+<summary>HTML Snippet 세부 정보</summary>
+
+
+
+#### ◎ HTML5 기본 템플릿 : `html!`
 
 ```json
 {
-	"html5 doctype": {
-		"prefix": "!html",
-		"body": [
-			"<!DOCTYPE html>",
-			"<html lang=\"ko\">",
-			"<head>",
-			"<meta charset=\"UTF-8\">",
-			"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-			"<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
-			"<title>$1</title>",
-			"</head>",
-			"<body>",
-			"$2",
-			"</body>",
-			"</html>"
-		],
-		"description": "html5 doctype"
-	}
+  "html5 doctype": {
+    "prefix": "html!",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"ko\">",
+      "<head>",
+      "<meta charset=\"UTF-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+      "<title>$1</title>",
+      "</head>",
+      "<body>",
+      "$2",
+      "</body>",
+      "</html>"
+    ],
+    "description": "html5 doctype"
+  }
 }
 ```
 
 
 
-◎ Vue 기본 템플릿 :  ```!vue```
+<br>
+
+#### ◎ Vue 기본 템플릿 :  `vue!`
 
 ```json
 {
-	"html5 vue template": {
-		"prefix": "!vue",
-		"body": [
-			"<!DOCTYPE html>",
-			"<html lang=\"ko\">",
-			"<head>",
-			"<meta charset=\"UTF-8\">",
-			"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-			"<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
-			"<title>$1</title>",
-			"<style>",
-			"	[v-cloak] {display:none;}",
-			"</style>",
-			"<!-- Vue JS 로드 -->",
-			"<script src=\"https://unpkg.com/vue\"></script>",
-			"</head>",
-			"<body>",
-			"",
-			"<!-- root vue instance → mounted elementNode -->",
-			"<div id=\"app\">",
-			"	",
-			"</div>",
-			"",
-			"<script>",
-			"var vm = new Vue({",
-			"	el: '#app',",
-			"	data: {",
-			"		",
-			"	}",
-			"});",
-			"</script>",
-			"</body>",
-			"</html>"
-		],
-		"description": "html5 Vue template"
-	}
+  "html5 vue template": {
+    "prefix": "!vue",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"ko\">",
+      "<head>",
+      "<meta charset=\"UTF-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+      "<title>$1</title>",
+      "<style>",
+      "	[v-cloak] {display:none;}",
+      "</style>",
+      "<!-- Vue JS 로드 -->",
+      "<script src=\"https://unpkg.com/vue\"></script>",
+      "</head>",
+      "<body>",
+      "",
+      "<!-- root vue instance → mounted elementNode -->",
+      "<div id=\"app\">",
+      "	",
+      "</div>",
+      "",
+      "",      
+      "<script>",
+      "var vm = new Vue({",
+      "	el: '#app',",
+      "	data: {",
+      "		",
+      "	}",
+      "});",
+      "</script>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "html5 Vue template"
+  }
 }
 ```
 
+</details>
 
 
-#### 2. JavaScript
 
-◎ console.log 기본 템플릿 : ```!log```
+<br>
+
+
+
+### 4-3. JavaScript Snippet
+
+<details>
+
+<summary>JavaScript Snippet 세부 정보</summary>
+
+
+
+#### ◎ console.log 기본 템플릿 : `log!`
 
 ```json
 {
@@ -464,45 +525,63 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
-◎ function 기본 템플릿 : ```!fun```
+<br>
+
+#### ◎ function 기본 템플릿 : `fun!` / `func!`
 
 ```json
 {
-	"Print to function": {
-		"prefix": "!fun",
-		"body": [
-			"function $1 ($2) {",
-			"	$3",
-			"}"
-		],
-		"description": "Make Basic function"
-	}
+  "Print to basic function": {
+    "prefix": "fun!",
+    "body": [
+      "function() {",
+      "	$1",
+      "}"
+    ],
+    "description": "Make Basic function"
+  },
+
+  "Print to common function ": {
+    "prefix": "func!",
+    "body": [
+      "function $1 ($2) {",
+      "	",
+      "}"
+    ],
+    "description": "Make common function"
+  }
 }
 ```
 
 
 
-◎ IIFE 기본 템플릿 : ```!iife```
+<br>
+
+#### ◎ IIFE 기본 템플릿 : `iife!`
 
 ```json
 {
-	"Print to IIFE": {
-		"prefix": "!iife",
-		"body": [
-			"(function(global){",
-			"	'use strict';",
-			"		$1",
-			"	});",
-			"})(window);"
-		],
-		"description": "Make Basic IIFE"
-	}
+  "Print to IIFE": {
+    "prefix": "iife!",
+    "body": [
+      "(function(global){",
+      "	'use strict';",
+      "		$1",
+      "	});",
+      "})(window);"
+    ],
+    "description": "Make Basic IIFE"
+  }
 }
 ```
 
 
 
+</details>
 
+
+
+<br><br>
 
 
 
