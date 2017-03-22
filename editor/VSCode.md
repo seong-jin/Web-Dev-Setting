@@ -127,8 +127,6 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
-<br>
-
 #### 1-8-2. Document This
 
 `Ctrl` + `Alt` + `D` + `D`
@@ -137,16 +135,12 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
-<br>
-
 
 #### 1-8-3. Document Everything
 `Ctrl` + `Alt` + `D` + `E`
 > Generates documentation for all symbols that are supported by the extension.
 
 
-
-<br>
 
 #### <s>1-8-4. Document Everything Visible</s>
 
@@ -162,7 +156,7 @@ Supports JSDoc and Closure Compiler tags :
 
 ### 1-9. Color Picker
 
-- [3. 단축키 설정 수정](#3-단축키 설정 수정) 에서 단축키 변경
+- [3. 단축키 설정 수정](#3-단축키-설정-수정) 에서 단축키 변경
   - 변경 전 : Alt + C  P
   - 변경 후 :  `Alt` + `C` + `P`
 
@@ -190,7 +184,7 @@ Supports JSDoc and Closure Compiler tags :
 * 기본 단축키 : `ctrl` + `shift` + `i` 
 
 
-* [2. 기본설정 수정](#2-기본설정 수정) 에서 기본 날짜형식 변경
+* [2. 기본 설정 수정](#2-기본-설정-수정) 에서 기본 날짜형식 변경
   * 변경 전 : `YYYY-MM-DD hh:mm:ss`
   * 변경 후 : `YYYY-MM-DD` 
 * 날짜 형식변경 및 날짜입력 : `ctrl` + `shift` + `alt` + `i`  입력 후, 명령창에서 형식 변경
@@ -226,7 +220,7 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
-## 2. 기본설정 수정
+## 2. 기본 설정 수정
 	파일 > 기본 설정 > 설정
 	setting.json 의 사용자 설정 수정
 	각자 스타일로 셋팅
