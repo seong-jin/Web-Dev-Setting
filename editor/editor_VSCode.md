@@ -347,12 +347,14 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 
 
 
-* html 파일에서 `html!` 를 `HTML5 기본 템플릿` `스니펫`으로 설정한 코드
+#### 1. HTML Snippet
+
+ ◎ HTML5 기본 템플릿 : `!html`
 
 ```json
 {
 	"html5 doctype": {
-		"prefix": "html!",
+		"prefix": "!html",
 		"body": [
 			"<!DOCTYPE html>",
 			"<html lang=\"ko\">",
@@ -372,12 +374,14 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 }
 ```
 
-* html 파일에서 ```vue!```를 ```Vue 기본 템플릿``` ```스니펫```으로 설정한 코드
+
+
+◎ Vue 기본 템플릿 :  ```!vue```
 
 ```json
 {
 	"html5 vue template": {
-		"prefix": "vue!",
+		"prefix": "!vue",
 		"body": [
 			"<!DOCTYPE html>",
 			"<html lang=\"ko\">",
@@ -395,6 +399,9 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 			"<body>",
 			"",
 			"<!-- root vue instance → mounted elementNode -->",
+			"<div id=\"app\">",
+			"	",
+			"</div>",
 			"",
 			"<script>",
 			"var vm = new Vue({",
@@ -407,19 +414,21 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 			"</body>",
 			"</html>"
 		],
-		"description": "html5 vue template"
+		"description": "html5 Vue template"
 	}
 }
 ```
 
 
 
-* JavaScript 에서 ```log```  을 ```console.log();``` 스니펫으로 설정한 코드
+#### 2. JavaScript
+
+◎ console.log 기본 템플릿 : ```!log```
 
 ```json
 {
 	"Print to console": {
-		"prefix": "log",
+		"prefix": "!log",
 		"body": [
 			"console.log('$1');",
 			"$2"
@@ -428,6 +437,52 @@ CSS 벤더 프리픽스를 자동으로 붙여주는 플러그인
 	}
 }
 ```
+
+
+
+◎ function 기본 템플릿 : ```!fun```
+
+```json
+{
+	"Print to function": {
+		"prefix": "!fun",
+		"body": [
+			"function $1 ($2) {",
+			"	$3",
+			"}"
+		],
+		"description": "Make Basic function"
+	}
+}
+```
+
+
+
+◎ IIFE 기본 템플릿 : ```!iife```
+
+```json
+{
+	"Print to IIFE": {
+		"prefix": "!iife",
+		"body": [
+			"(function(global){",
+			"	'use strict';",
+			"		$1",
+			"	});",
+			"})(window);"
+		],
+		"description": "Make Basic IIFE"
+	}
+}
+```
+
+
+
+
+
+
+
+
 
 
 

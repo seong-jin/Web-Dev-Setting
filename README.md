@@ -6,8 +6,8 @@
 
 ### [브라우저 필수앱 정리](https://github.com/seong-jin/Web-Dev-Setting/blob/master/browser/browser.md)
 
-* 업데이트 중 
 * Chrome / Firefox
+* 최종 업데이트 : 17-03-23
 
 
 
@@ -19,15 +19,13 @@
 
 ### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_Atom.md)
 
-* 업데이트 중​
-
--
+* 2017-02-27 이후 관련 내용 업데이트 중지
 
 
 
 ### [Visual Studio Code](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_VSCode.md)
 
-* 업데이트 중
+* 최종 업데이트 : 17-03-23
 
   ​
 
@@ -42,13 +40,11 @@
 
 
 
--
-
 
 
 ## 4. Platform
 
-### Node.js
+### Node-Sass
 
 * 준비중
 * Node Sass 사용을 위한 설치 과정
