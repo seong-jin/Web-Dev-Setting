@@ -12,22 +12,31 @@
 
 
 
+<br><br>
+
+
+
 
 ## 2. Editor
 
 
 
-### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_Atom.md)
+### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/Atom.md)
 
 * 2017-02-27 이후 관련 내용 업데이트 중지
 
 
+<br>
 
-### [Visual Studio Code](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/editor_VSCode.md)
+### [Visual Studio Code](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/VSCode.md)
 
 * 최종 업데이트 : 17-03-23
 
-  ​
+
+
+
+<br><br>
+
 
 
 
@@ -40,7 +49,7 @@
 
 
 
-
+<br><br>
 
 ## 4. Platform
 
