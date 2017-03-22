@@ -79,11 +79,12 @@
 ### 1-5. vetur
 
 * Vue.js  구문 강조
-* `.vue` 파일이 아닐 경우, 기본적으로 구문 강조가 적용 안됨.
+* `.vue` 파일이 아닐 경우, 기본적으로 구문 강조 적용 안됨
 
 
 
-**◎ 구문 강조 설정 방법**
+
+#### ◎ 구문 강조 설정 방법
 
 1. 우측 하단의 `언어모드 선택` 클릭 
 2. 명령창에 `vue` 입력
@@ -326,7 +327,9 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
    - 우측 : `keybindings.json`
 3. 각자 스타일로 셋팅
 
-**◎ 참고자료** :  [VS Code 기본 단축키 일람 PDF 문서](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+
+#### ◎ 참고자료 :  [VS Code 기본 단축키 일람 PDF 문서](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 
 
