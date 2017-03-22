@@ -392,7 +392,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 1.  명령어 창 열기
     * 파일 > 기본 설정 > 사용자 코드 조각 
-    * `ctrl` + `shift` + `p`  snippet
+    * `ctrl` + `shift` + `p` 
 2.  `snippet` 검색 → `Preferences Snippets` 선택
 3.  코드 조각의 언어 선택 : `html` ,  `javascript` 등 입력할 언어 선택
 4.  해당 json 파일이 열리면 아래와 같은 형식으로 내용 수정
