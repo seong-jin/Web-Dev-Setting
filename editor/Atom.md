@@ -9,7 +9,7 @@
 * Atom 스니펫 설정 : http://recoveryman.tistory.com/237
 
 
-<br><br>
+<br>
 
 ## 1. 기본 정보
 * 프로젝트 추가 : File > Add Project Folder
@@ -19,7 +19,7 @@
 * 설치된 package 확인 : settings > packages
 
 
-<br><br>
+<br>
 
 ## 2. 기본 단축키 및 설정
 
@@ -31,7 +31,7 @@
 | 동일 구문 찾기(멀티블럭 상태)   | 블럭 지정 후, `Ctrl` + `d`                    |
 | 자동 줄바꿈              | Setting (`ctrl` + `,`) > Editor > Soft Wrap |
 
-<br><br>
+<br>
 
 
 ## 3. 테마 설정
@@ -40,7 +40,7 @@
 * 추천테마 : one dark (기본)
 
 
-<br><br>
+<br>
 
 ## 4. 단축키 수정
 
@@ -64,7 +64,7 @@
 * cf) `ctrl-shift-w` 기본 값이 아톰을 닫는 단축키이므로 의도치 않게 에디터가 꺼지는 것을 막기 위해 Emmet의 wrap width abbreviation 의 단축키로 지정
 
 
-<br><br>
+<br>
 
 ## 5. 주요 package 모음
 
