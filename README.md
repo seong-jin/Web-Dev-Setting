@@ -23,7 +23,7 @@
 
 ### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/Atom.md)
 
-* 2017-02-27 이후 관련 내용 업데이트 중지
+* 2017-03-23 이후 관련 내용 업데이트 중지
 
 
 <br>
@@ -39,19 +39,7 @@
 
 
 
-
-## 3. IDE
-
-### WebStorm
-
-* 준비중
-
-
-
-
-<br><br>
-
-## 4. Platform
+## 3. Platform
 
 ### Node-Sass
 
