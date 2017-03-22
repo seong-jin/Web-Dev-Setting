@@ -556,7 +556,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 <br>
 
-#### ◎ IIFE 기본 템플릿 : `iife!`
+#### ◎ IIFE Pattern 기본 템플릿 : `iife!`
 
 ```json
 {
