@@ -10,6 +10,8 @@
 
 <br>
 
+<br>
+
 
 
 ## 1. 주요 확장 모음
@@ -220,7 +222,7 @@ Supports JSDoc and Closure Compiler tags :
 
 </details>
 
-<br>
+<br><br>
 
 
 
@@ -239,7 +241,7 @@ Supports JSDoc and Closure Compiler tags :
    * 좌측 : 기본 설정 (변경 안됨)
    * 우측
      *  `사용자 설정` : 언어 식별자 집합에 대해 재정의할 설정을 구성합니다.
-     * `작업 영역 설정` : 설정을 이 파일에 넣어서 기본 설정과 사용자 설정을 덮어씁니다.
+     *  `작업 영역 설정` : 설정을 이 파일에 넣어서 기본 설정과 사용자 설정을 덮어씁니다.
 3. 각자 스타일로 셋팅
    * `기본 설정`에서 설정값 가져오기
      * ​원하는 설정에 마우스 오버시 보이는 `연필 아이콘` :pencil2:  클릭
@@ -304,7 +306,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 </details>
 
-<br>
+<br><br>
 
 
 
@@ -368,13 +370,17 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 </details>
 
-<br>
+<br><br>
 
 
 
 ## 4. Snippet
 
 
+
+<details>
+
+<summary>Snippet 세부 정보</summary>
 
 ### 4-1. Snippet 설정
 
@@ -412,10 +418,6 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 <br>
 
 ### 4-2. HTML Snippet
-
-<details>
-
-<summary>HTML Snippet 세부 정보</summary>
 
 
 
@@ -492,8 +494,6 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 }
 ```
 
-</details>
-
 
 
 <br>
@@ -501,10 +501,6 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 
 ### 4-3. JavaScript Snippet
-
-<details>
-
-<summary>JavaScript Snippet 세부 정보</summary>
 
 
 
