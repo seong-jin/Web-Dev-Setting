@@ -458,7 +458,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 ```json
 {
   "html5 vue template": {
-    "prefix": "!vue",
+    "prefix": "vue!",
     "body": [
       "<!DOCTYPE html>",
       "<html lang=\"ko\">",
@@ -480,7 +480,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
       "	",
       "</div>",
       "",
-      "",      
+      "",
       "<script>",
       "var vm = new Vue({",
       "	el: '#app',",
@@ -511,14 +511,14 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 ```json
 {
-	"Print to console": {
-		"prefix": "!log",
-		"body": [
-			"console.log('$1');",
-			"$2"
-		],
-		"description": "Log output to console"
-	}
+  "Print to console": {
+    "prefix": "!log",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  }
 }
 ```
 
