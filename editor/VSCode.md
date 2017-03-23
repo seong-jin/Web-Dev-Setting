@@ -315,7 +315,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 <details>
 
-<summary>단축키 설정 수정 세부 정보</summary>
+<summary>단축키 설정 세부 정보</summary>
 
 
 
