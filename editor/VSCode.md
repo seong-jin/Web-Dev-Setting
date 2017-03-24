@@ -566,7 +566,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
       "(function(global){",
       "	'use strict';",
       "		$1",
-      "	});",
+      "		",
       "})(window);"
     ],
     "description": "Make Basic IIFE"
