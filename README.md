@@ -9,7 +9,7 @@
 ### [브라우저 필수앱 정리](https://github.com/seong-jin/Web-Dev-Setting/blob/master/browser/browsers.md)
 
 * Chrome / Firefox
-* 최종 업데이트 : 17-03-23
+* 최종 업데이트 : 17-08-24
 
 
 
