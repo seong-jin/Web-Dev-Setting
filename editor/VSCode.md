@@ -247,8 +247,6 @@ Supports JSDoc and Closure Compiler tags :
   }
   ```
 
-  ​
-
 * 참고 URL
 
   * https://marketplace.visualstudio.com/items?itemName=rafamel.subtle-brackets
@@ -290,7 +288,7 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
-### 2-2. 사용자 설정에 추가한 코드
+### 2-2. 사용자 설정에 추가한 코드 (!! VS Code 업데이트로 상당부분 변경됨)
 
 ```json
 {
