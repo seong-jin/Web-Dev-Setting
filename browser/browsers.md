@@ -24,6 +24,7 @@
 * `Advanced REST client` : HTTP Request를 작성하고 테스트할 수 있는 도구
 * `Emmet Re:view` : 디바이스 시뮬레이터
 * **`Vue.js devtools`** : Chrome devtools extension for debugging Vue.js applications.
+* `Google 번역` : 전체 페이지 또는 문장/단어 번역. 레이어 팝업형태 보이게 셋팅 가능.
 
 
 
@@ -31,3 +32,4 @@
 <br><br>
 
 ---
+

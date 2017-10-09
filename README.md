@@ -9,7 +9,7 @@
 ### [브라우저 필수앱 정리](https://github.com/seong-jin/Web-Dev-Setting/blob/master/browser/browsers.md)
 
 * Chrome / Firefox
-* 최종 업데이트 : 17-08-24
+* 최종 업데이트 : 17-10-10
 
 
 
@@ -33,7 +33,7 @@
 
 * **이후 VSCode 의 업데이트가 빠르게 진행되고 있어 기존의 내용과 맞지 않는 부분이 있음**
 * 추후 문서 업데이트 예정
-* 최종 업데이트 : 17-03-23
+* 최종 업데이트 : 17-10-10
 
 
 
