@@ -154,6 +154,75 @@
 	Ctrl + Shift + x : Math Rendering 토글
 	단축키를 사용하려면 keymap.cson 파일에 해당 내용 추가
 
+
+
+<br>
+
+## 6. 개인 셋팅 상황
+
+* `File > Config` :  `File > Setting` 에서 수정한 내용이 config.cson 파일로 설정되어 있으며 직접 수정 가능.
+
+  * 개인 셋팅 상황 (변경 중)
+
+  ```json
+  "*":
+    aligner:
+      alignComments: true
+    core:
+      audioBeep: false
+      closeDeletedFileTabs: true
+      telemetryConsent: "no"
+      themes: [
+        "one-dark-ui"
+        "base16-tomorrow-dark-theme"
+      ]
+    docblockr: {}
+    editor:
+      fontSize: 16
+      invisibles:
+        cr: " "
+        eol: " "
+      preferredLineLength: 250
+      showInvisibles: true
+      softWrap: true
+      tabLength: 4
+      tabType: "soft"
+    emmet: {}
+    "exception-reporting":
+      userId: "a4a93ec9-95d3-2ac8-d378-d3e466550cce"
+    "file-icons": {}
+    fileTypes: [
+      "txt"
+      "log"
+      "syslog"
+      "out"
+      "output"
+    ]
+    "seti-syntax": {}
+    "seti-ui": {}
+    welcome:
+      showOnStartup: false
+  ```
+
+  ​
+
+* `File > Stylesheet` 
+
+  * style.less 파일을 수정하여 에디터의 스타일을 변경할 수 있다.
+  * ex) 커서 수정
+
+  ```less
+  // style UI elements inside atom-text-editor
+  atom-text-editor .cursor {
+      border-width: 2px;
+      border-color: #9ad392;
+  }
+  ```
+
+  ​
+
+
+
 <br>
 
 ---
