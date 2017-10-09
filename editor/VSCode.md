@@ -210,6 +210,7 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
+
 <br>
 
 ### 1-13. Autoprefixer 
@@ -221,9 +222,44 @@ Supports JSDoc and Closure Compiler tags :
 
 
 
+
+<br>
+
+### 1-14. Bracket Pair Colorizer
+
+* 짝이 맞는 괄호를 색상별로 구분하기 쉽게 보여 줌
+* 참고 URL
+  * https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer
+
+
+
+<br>
+
+### 1-15. Subtle Match Brackets
+
+* 짝이 맞는 괄호의 스타일 변경 가능
+
+* VS Code 의 짝이 맞는 괄호 강조 기본 패턴(직사각형 패턴)을 제거 후, 사용하면 가독성을 높일 수 있다.
+
+  ```json
+  {
+      "editor.matchBrackets": false
+  }
+  ```
+
+  ​
+
+* 참고 URL
+
+  * https://marketplace.visualstudio.com/items?itemName=rafamel.subtle-brackets
+
 </details>
 
 <br><br>
+
+
+
+
 
 
 
