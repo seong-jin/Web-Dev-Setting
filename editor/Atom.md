@@ -125,7 +125,9 @@
 	linter-csshint : Atom 내에서 자동으로 CSS 유효성 검사
 
 * 위 두 개의 패키지중 하나를 설치한 후, Atom 을 다시 실행하면 의존 패키지 설치 여부를 묻는다.
-* 의존 패키지 : linter, linter-ui-default
+  * 의존 패키지 : linter, linter-ui-default 
+* 순차적으로 의존 패키지 설치
+
 
 
 ### 5-9. aligner
