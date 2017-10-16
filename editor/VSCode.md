@@ -292,28 +292,15 @@ Supports JSDoc and Closure Compiler tags :
 
 ```json
 {
-  "[]": {},
-
-  "editor.tabSize": 2,
-  "editor.lineHeight": 20,
-  "window.zoomLevel": 1,
-  "files.trimTrailingWhitespace": true,
-  "editor.wordWrap": "on",
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": true,
-  "editor.insertSpaces": false,
-  "editor.renderIndentGuides": false,
-  "view-in-browser.customBrowser": "chrome",
-  "emmet.triggerExpansionOnTab": false,
-  "emmet.syntaxProfiles": {},
-  "insertdatestring.format": "YYYY-MM-DD",
-  "workbench.activityBar.visible": true,
-  "editor.minimap.enabled": true,
-  "editor.minimap.renderCharacters": true,
-  "editor.minimap.maxColumn": 40,
-  "workbench.iconTheme": "vscode-icons",
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
-  "vsicons.projectDetection.autoReload": true
+	"editor.matchBrackets": false,
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.startupEditor": "newUntitledFile",
+	"window.zoomLevel": 0,
+	"editor.fontSize": 13,
+	"editor.renderWhitespace": "boundary",
+	"editor.insertSpaces": false,
+	"editor.wordWrap": "on",
+	"insertDateString.format": "YYYY-MM-DD"
 }
 ```
 
