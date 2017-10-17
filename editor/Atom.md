@@ -113,9 +113,6 @@
 * 설명 : https://atom.io/packages/pigments
 
 
-
-
-
 ### 5-7. indent-guide-improved
 	탭 세로 안내선 추가
 
@@ -125,7 +122,7 @@
 	linter-csshint : Atom 내에서 자동으로 CSS 유효성 검사
 
 * 위 두 개의 패키지중 하나를 설치한 후, Atom 을 다시 실행하면 의존 패키지 설치 여부를 묻는다.
-	* 의존 패키지 : `linter`, `linter-ui-default`
+  * 의존 패키지 : `linter`, `linter-ui-default`
 * 순차적으로 의존 패키지 설치
 
 
@@ -152,15 +149,28 @@
 * 설명 : https://atom.io/packages/docblockr
 
 
-
-
 ### 5-12. Markdown Preview Plus (MPP)
 	마크다운 파일 프리뷰
 	Ctrl + Shift + m : 프리뷰 토글
 	Ctrl + Shift + x : Math Rendering 토글
 	단축키를 사용하려면 keymap.cson 파일에 해당 내용 추가
 
+### 5-13. date
+	현재 날짜, 시간 입력, 형식 셋팅 가능 
+	형식참고 : https://date-fns.org/docs/format
 
+* 기본 셋팅
+  * Date Format : YYYY-MM-DD
+  * Time Format : HH:mm
+  * Date Time Form : YYYY-MM-DD HH:mm
+
+* 단축키 설정 (keymap.cson)
+  ```json
+  'atom-text-editor':
+    'ctrl-d': 'date:date'
+    'ctrl-shift-d': 'date:time'
+    'ctrl-shift-alt-d': 'date:datetime'
+  ```
 
 <br>
 

@@ -24,7 +24,7 @@
 
 ### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/Atom.md)
 
-* 최종 업데이트 : 17-10-11
+* 최종 업데이트 : 17-10-17
 
 
 <br>
