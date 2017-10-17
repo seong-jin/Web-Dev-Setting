@@ -157,12 +157,14 @@
 
 ### 5-13. date
 	현재 날짜, 시간 입력, 형식 셋팅 가능 
-	형식참고 : https://date-fns.org/docs/format
+
 
 * 기본 셋팅
+  * 형식참고 : https://date-fns.org/docs/format
   * Date Format : YYYY-MM-DD
   * Time Format : HH:mm
   * Date Time Form : YYYY-MM-DD HH:mm
+
 
 * 단축키 설정 (keymap.cson)
   ```json
