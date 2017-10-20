@@ -272,7 +272,7 @@ Supports JSDoc and Closure Compiler tags :
 ### 2-1. 기본 설정 확인 
 
 1. 파일 > 기본 설정 > 설정
-2. **`setting.json` **
+2. `setting.json` 
    * 좌측 : 기본 설정 (변경 안됨)
    * 우측
      *  `사용자 설정` : 언어 식별자 집합에 대해 재정의할 설정을 구성합니다.
@@ -344,7 +344,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 ### 3-1. 단축키 설정 확인
 
 1. 파일 > 기본 설정 > 바로 가기 키
-2. **`keybindings.json` **
+2. `keybindings.json` 
    - 좌측 : `기본 키 바인딩` (변경 안됨)
    - 우측 : `keybindings.json`
 3. 각자 스타일로 셋팅
