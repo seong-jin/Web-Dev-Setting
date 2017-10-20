@@ -364,7 +364,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 ```
 // 키 바인딩을 이 파일에 넣어서 기본값을 덮어씁니다.
 [
-	// 기본키 차단
+    // 기본키 차단
     // 다른 단축키로 사용
     // w를 사용하는 기본명령이 창닫기와 관련되어 있음
     // 의도치 않게 프로그램이나 탭을 닫는 것을 막는다.    
@@ -384,10 +384,10 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
     {"key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
     },
-	// 기본키 차단
+    // 기본키 차단
 
 	
-	// 대문자로 변경
+    // 대문자로 변경
     {"key": "ctrl+k ctrl+k",
         "command": "editor.action.transformToUppercase"
     },

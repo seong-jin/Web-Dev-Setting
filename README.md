@@ -24,15 +24,14 @@
 
 ### [Atom](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/Atom.md)
 
-* 최종 업데이트 : 17-10-17
+* 최종 업데이트 : 17-10-20
 
 
 <br>
 
 ### [Visual Studio Code](https://github.com/seong-jin/Web-Dev-Setting/blob/master/editor/VSCode.md)
 
-* **이후 VSCode 의 업데이트가 빠르게 진행되고 있어 기존의 내용과 맞지 않는 부분이 있음**
-* 최종 업데이트 : 17-10-10
+* 최종 업데이트 : 17-10-20
 
 
 
