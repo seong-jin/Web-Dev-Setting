@@ -156,7 +156,7 @@
 	단축키를 사용하려면 keymap.cson 파일에 해당 내용 추가
 
 ### 5-13. date
-	현재 날짜, 시간 입력, 형식 셋팅 가능 
+	현재 날짜, 시간 입력, 형식 셋팅 가능
 
 
 * 기본 셋팅
@@ -184,64 +184,89 @@
 
   ```json
   "*":
-    aligner:
-      alignComments: true
+    "atom-package-deps":
+      ignored: [
+        "linter-ui-default"
+      ]
     core:
-      audioBeep: false
-      closeDeletedFileTabs: true
       telemetryConsent: "no"
       themes: [
         "one-dark-ui"
         "base16-tomorrow-dark-theme"
       ]
-    docblockr: {}
+    date:
+      dateFormat: "YYYY-MM-DD"
+      dateTimeFormat: "YYYY-MM-DD HH:mm"
     editor:
-      fontSize: 16
+      fontSize: 12
       invisibles:
-        cr: " "
-        eol: " "
-      preferredLineLength: 250
+        cr: ""
+        eol: ""
+      preferredLineLength: 400
+      scrollPastEnd: true
+      showIndentGuide: true
       showInvisibles: true
       softWrap: true
       tabLength: 4
-      tabType: "soft"
-    emmet: {}
+      tabType: "hard"
     "exception-reporting":
-      userId: "a4a93ec9-95d3-2ac8-d378-d3e466550cce"
-    "file-icons": {}
-    fileTypes: [
-      "txt"
-      "log"
-      "syslog"
-      "out"
-      "output"
-    ]
-    "seti-syntax": {}
-    "seti-ui": {}
+      userId: "8cdcead5-8d36-40bd-b647-aa29ff5a9f69"
+    "linter-ui-default":
+      panelHeight: 113
+      showPanel: true
+    minimap:
+      charHeight: 1
     welcome:
       showOnStartup: false
+    whitespace:
+      ignoreWhitespaceOnCurrentLine: false
+
   ```
 
-  ​
 
-* `File > Stylesheet` 
+* `File > Keymap`
+  * keymap.cson 파일을 수정하여 에디터의 바로가기 키 설정 변경
+
+  ```json
+
+  'atom-text-editor':
+    'ctrl-k ctrl-k': 'editor:upper-case'
+    'ctrl-k ctrl-l': 'editor:lower-case'
+    'ctrl-shift-alt-m': 'markdown-preview:toggle'
+    'ctrl-d': 'date:date'
+    'ctrl-shift-d': 'date:time'
+    'ctrl-shift-alt-d': 'date:datetime'
+  ```
+
+* `File > Stylesheet`
 
   * style.less 파일을 수정하여 에디터의 스타일을 변경할 수 있다.
   * ex) 커서 수정
 
   ```less
+  // style the background color of the tree view
+  .tree-view {
+    // background-color: whitesmoke;
+    background-color: #111;
+  }
+
+  // style the background and foreground colors on the atom-text-editor-element itself
+  atom-text-editor {
+    // color: white;
+    // background-color: hsl(180, 24%, 12%);
+    background-color: #111;
+  }
+
   // style UI elements inside atom-text-editor
   atom-text-editor .cursor {
-      border-width: 2px;
-      border-color: #9ad392;
+    // border-color: red;
+    border-width: 2px;
+    border-color: #9ad392;
   }
   ```
-
-  ​
 
 
 
 <br>
 
 ---
-
