@@ -169,7 +169,7 @@
 * 단축키 설정 (keymap.cson)
   ```json
   'atom-text-editor':
-    'ctrl-d ': 'date:date'
+    'ctrl-d': 'date:date'
     'ctrl-shift-d': 'date:time'
     'ctrl-shift-alt-d': 'date:datetime'
   ```
