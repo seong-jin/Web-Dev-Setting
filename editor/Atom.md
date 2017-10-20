@@ -220,7 +220,6 @@
       showOnStartup: false
     whitespace:
       ignoreWhitespaceOnCurrentLine: false
-
   ```
 
 
@@ -228,7 +227,6 @@
   * keymap.cson 파일을 수정하여 에디터의 바로가기 키 설정 변경
 
   ```json
-
   'atom-text-editor':
     'ctrl-k ctrl-k': 'editor:upper-case'
     'ctrl-k ctrl-l': 'editor:lower-case'
@@ -237,6 +235,17 @@
     'ctrl-shift-d': 'date:time'
     'ctrl-shift-alt-d': 'date:datetime'
   ```
+
+* `File > Snippets`
+  * snippets.cson 파일을 수정하여 스니펫 설정
+
+  ```json
+  '.source.css':
+  '가상선택자 after를 사용한 플롯 해제':
+  'prefix': 'clear'
+  'body': 'after {content:\'\'; display:block; visibility:hidden; clear:both; overflow:hidden; width:0; height:0;}'
+  ```
+
 
 * `File > Stylesheet`
 
