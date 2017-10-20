@@ -169,7 +169,7 @@
 * 단축키 설정 (keymap.cson)
   ```json
   'atom-text-editor':
-    'ctrl-d': 'date:date'
+    'ctrl-d ': 'date:date'
     'ctrl-shift-d': 'date:time'
     'ctrl-shift-alt-d': 'date:datetime'
   ```
@@ -241,9 +241,9 @@
 
   ```json
   '.source.css':
-  '가상선택자 after를 사용한 플롯 해제':
-  'prefix': 'clear'
-  'body': 'after {content:\'\'; display:block; visibility:hidden; clear:both; overflow:hidden; width:0; height:0;}'
+    '가상선택자 after를 사용한 플롯 해제':
+    'prefix': 'clear'
+    'body': 'after {content:\'\'; display:block; visibility:hidden; clear:both; overflow:hidden; width:0; height:0;}'
   ```
 
 
