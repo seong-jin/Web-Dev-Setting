@@ -44,7 +44,7 @@
 
 ### 1-2. ESLint
 
-* 문법 오류 감지
+* JavaScript 문법 오류 감지
 
 <br>
 
@@ -272,7 +272,7 @@ Supports JSDoc and Closure Compiler tags :
 ### 2-1. 기본 설정 확인 
 
 1. 파일 > 기본 설정 > 설정
-2. `setting.json` 
+2. **`setting.json` **
    * 좌측 : 기본 설정 (변경 안됨)
    * 우측
      *  `사용자 설정` : 언어 식별자 집합에 대해 재정의할 설정을 구성합니다.
@@ -297,10 +297,11 @@ Supports JSDoc and Closure Compiler tags :
 	"workbench.startupEditor": "newUntitledFile",
 	"window.zoomLevel": 0,
 	"editor.fontSize": 13,
-	"editor.renderWhitespace": "boundary",
+	"editor.renderWhitespace": "all",
 	"editor.insertSpaces": false,
 	"editor.wordWrap": "on",
-	"insertDateString.format": "YYYY-MM-DD"
+	"insertDateString.format": "YYYY-MM-DD",
+	"files.trimTrailingWhitespace": true
 }
 ```
 
@@ -343,7 +344,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 ### 3-1. 단축키 설정 확인
 
 1. 파일 > 기본 설정 > 바로 가기 키
-2. `keybindings.json` 
+2. **`keybindings.json` **
    - 좌측 : `기본 키 바인딩` (변경 안됨)
    - 우측 : `keybindings.json`
 3. 각자 스타일로 셋팅
@@ -354,39 +355,60 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 
 
-### 3-2. keybindings.json 에 추가한 코드 
+### 3-2. keybindings.json 에 추가한 코드 (!! VS Code 업데이트로 상당부분 변경됨) 
+
+* `[]` 안의 주석은 삭제 할 것 
+* VS Code 업데이트 또는 패키지 업데이트 시, **해당 명령어들이 변경될 수 있음**
 
 
 ```
 // 키 바인딩을 이 파일에 넣어서 기본값을 덮어씁니다.
 [
-  // emmet 실행
-  { "key": "ctrl+e",
-    "command": "editor.emmet.action.expandAbbreviation",
-	"when": "editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadonly && !editorTabMovesFocus" },
-  // 계산
-  { "key": "ctrl+shift+y",
-	"command": "editor.emmet.action.evaluateMath",
-	"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },
-  // 요소 감싸기
-  { "key": "ctrl+w",
-	"command": "editor.emmet.action.wrapWithAbbreviation",
-	"when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },
+	// 기본키 차단
+    // 다른 단축키로 사용
+    // w를 사용하는 기본명령이 창닫기와 관련되어 있음
+    // 의도치 않게 프로그램이나 탭을 닫는 것을 막는다.    
+    {"key": "ctrl+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
+    },
+    {"key": "ctrl+k ctrl+w",
+        "command": "-workbench.action.closeAllEditors"
+    },
+    {"key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen"
+    },
+    {"key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {"key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+	// 기본키 차단
 
-  // 블럭지정 또는 포커스된 문자 - 소문자로
-  { "key": "ctrl+l ctrl+l",
-	"command": "editor.action.transformToLowercase",
-	"when": "editorTextFocus" },
-  // 블럭지정 또는 포커스된 문자 - 대문자로
-  { "key": "ctrl+l ctrl+k",
-	"command": "editor.action.transformToUppercase",
-	"when": "editorTextFocus" },
-
-  // 컬러 피커 사용
-  { "key": "alt+c alt+p",
-	"command": "extension.colorHelper.pick",
-	"when": "editorTextFocus" }
-
+	
+	// 대문자로 변경
+    {"key": "ctrl+k ctrl+k",
+        "command": "editor.action.transformToUppercase"
+    },
+    // 소문자로 변경
+    {"key": "ctrl+k ctrl+l",
+        "command": "editor.action.transformToLowercase"
+    },
+	// emmet 계산기 사용
+    {"key": "ctrl+shift+y",
+        "command": "editor.emmet.action.evaluateMathExpression"
+    },
+    // emmet 부모요소 추가
+    {"key": "ctrl+w",
+        "command": "editor.emmet.action.wrapWithAbbreviation",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    // 컬러피커 사용
+    {"key": "alt+c alt+p",
+        "command": "extension.colorHelper.pick",
+        "when": "editorTextFocus"
+    }
 ]
 ```
 
@@ -408,32 +430,36 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 ### 4-1. Snippet 설정
 
+* 각 언어별로 개별 스니펫 파일이 생성 됨
 
 
-
-1.  명령어 창 열기
-    * 파일 > 기본 설정 > 사용자 코드 조각 
-    * `ctrl` + `shift` + `p` 
-2.  `snippet` 검색 → `Preferences Snippets` 선택
-3.  코드 조각의 언어 선택 : `html` ,  `javascript` 등 입력할 언어 선택
-4.  해당 json 파일이 열리면 아래와 같은 형식으로 내용 수정
+1.  Snippet 실행
+    * 툴바 : 파일 > 기본 설정 > 사용자 코드 조각 
+    * 명령어창
+      1. `ctrl` + `shift` + `p`  > `snippet` 검색
+      2. `Preferencess : Open User Snippets` 선택
+2.  코드 조각의 언어 선택 : `html` ,  `javascript` 등 snippet을 작성할 언어 선택
+3.  해당 `json` 파일이 열리면 아래와 같은 형식으로 내용 추가 및 수정
+    * `json.json ` : 스니펫 등록을 위한 스니펫 작성
+    * `snippet-input` 입력 후 엔터키를 누르면, 스니펫을 작성하기 위한 기본 코드 형식 생성됨
 
 
 
 ```
 {
-  // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and
-  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-  // same ids are connected.
-  // Example:
-  "Print to console": {
-  "prefix": "log",
-  "body": [
-  "console.log('$1');",
-  "$2"
-  ],
-  "description": "Log output to console"
+	"스니펫 등록양식 생성": {
+		"prefix": "snippet-input",
+		"body": [
+			",\"${1:스니펫 등록명}\": {",
+			"\t\"prefix\": \"${2:스니펫 명령어}\",",
+			"\t\"body\": [",
+			"\t\t\"${3:스니펫 내용입력}\"",
+			"\t],",
+			"\t\"description\": \"${4:설명글}\"",
+			"}"
+		],
+		"description": "스니펫 등록양식 생성"
+	}
 }
 ```
 
@@ -449,7 +475,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
 
 ```json
 {
-  "html5 doctype": {
+  "html5 기본 Doctype 생성": {
     "prefix": "html!",
     "body": [
       "<!DOCTYPE html>",
