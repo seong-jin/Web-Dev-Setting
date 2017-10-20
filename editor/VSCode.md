@@ -367,7 +367,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
     // 기본키 차단
     // 다른 단축키로 사용
     // w를 사용하는 기본명령이 창닫기와 관련되어 있음
-    // 의도치 않게 프로그램이나 탭을 닫는 것을 막는다.    
+    // 의도치 않게 프로그램이나 탭이 닫히는 것을 막는다.    
     {"key": "ctrl+k w",
         "command": "-workbench.action.closeEditorsInGroup"
     },
@@ -395,7 +395,7 @@ ex) `tabSize`를 **기본** 2로 하고 **JavaScript** 에서는 4로 하고 싶
     {"key": "ctrl+k ctrl+l",
         "command": "editor.action.transformToLowercase"
     },
-	// emmet 계산기 사용
+    // emmet 계산기 사용
     {"key": "ctrl+shift+y",
         "command": "editor.emmet.action.evaluateMathExpression"
     },
